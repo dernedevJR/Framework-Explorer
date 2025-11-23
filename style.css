@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+    --cor-base: white;
+    --base-variante: #e8e9ed;
+    --texto: #111528;
+    --texto-secundario: #232738;
+    --cor-primaria: #3a435d;
+    --cor-destaque: #0071ff;
+    --fonteTitulo: 'Orbitron', sans-serif;
+    --fonteTexto: 'Zalando Sans Expanded', sans-serif;
+    --base-secundaria:rgba(255, 255, 255, 0.764);
+}
+.darkMode{
+     --cor-base: #070b1d;
+    --base-variante: #101425;
+    --texto: #ffffff;
+    --texto-secundario: #a4a5b8;
+    --cor-primaria: #3a435d;
+    --cor-destaque: #0071ff;
+    --fonteTitulo: 'Orbitron', sans-serif;
+    --fonteTexto: 'Zalando Sans Expanded', sans-serif;
+    --base-secundaria:rgba(255,255,255,0.02);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0px;
+   padding: 20px;
+   background-color: var(--cor-base);
+   color: var(--texto);
+   min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+   display: flex; /* Ativa o Flexbox */
+   flex-direction: column; /* Organiza os itens em coluna (header, main, footer) */
+   overflow: hidden; /* Mantém a remoção da rolagem */
+   font-family: var(--fonteTexto);
+   background-color: var(--base-variante);
+}
+
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 18px;
+    background: var(--base-secundaria) ;
+    border-radius: 12px;
+    margin-bottom: 14px;
+}
+.brand h1{
+    font-family: var(--fonteTitulo);
+    margin: 0;
+    font-size: 20px;
+}
+#filtro-categoria{
+   padding: 8px;
+   border-radius: 10px;
+   border: 1px solid rgba(255,255,255,0.04);
+   background-color: var(--texto);
+   color: var(--cor-base);
+   font-family: var(--fonteTexto);
+}
+
+#busca{
+   padding: 8px;
+   border-radius: 10px;
+   border: 1px solid rgba(255,255,255,0.04);
+   background-color: var(--texto);
+   color: var(--cor-base);
+   font-family: var(--fonteTexto);
+}
+
+#busca::placeholder {
+  color: var(--cor-base);
+}
+
+.buscar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    border: none;
+    cursor: pointer;
+}
+i{
+    color: var(--base-variante);
+}
+main{
+    flex: 1; /* Faz o main ocupar todo o espaço vertical disponível */
+    overflow-y: auto; /* Adiciona rolagem apenas no main, se necessário */
+}
+
+.container-links{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--base-secundaria);
+    border-radius: 12px;
+}
+
+footer a{
+    margin: 0 10px;
+}
+
+.darkMode footer a img {
+    filter: invert(1);
+}
+
+ /*Alterando Tema*/
+#trocar-tema{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variante);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    position:fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+}
+
+#trocar-tema svg{
+      fill: var(--cor-primaria);
+}
+
+#trocar-tema svg:last-child{
+    display: none;
+}
+
+.darkMode #trocar-tema svg:first-child{
+    display: none;
+}
+
+.darkMode #trocar-tema svg:last-child{
+    display: block;
+}

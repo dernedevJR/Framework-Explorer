@@ -1,0 +1,56 @@
+[
+    {
+        "nome": "React",
+        "descricao": "Biblioteca JavaScript para construção de interfaces de usuário.",
+        "linguagem": "JavaScript",
+        "ano": "2013",
+        "criador": "Jordan Walke",
+        "categoria": "Frontend",
+        "link": "https://reactjs.org/"
+    },
+    {
+        "nome": "Angular",
+        "descricao": "Framework completo para construção de aplicações web.",
+        "linguagem": "TypeScript",
+        "ano": "2016",
+        "criador": "Google",
+        "categoria": "Frontend",
+        "link": "https://angular.io/"
+    },
+    {
+        "nome": "Vue.js",
+        "descricao": "Framework progressivo para interfaces simples e escaláveis.",
+        "linguagem": "JavaScript",
+        "ano": "2014",
+        "criador": "Evan You",
+        "categoria": "Frontend",
+        "link": "https://vuejs.org/"
+    },
+    {
+        "nome": "Django",
+        "descricao": "Framework poderoso para desenvolvimento web em Python",
+        "linguagem": "Python",
+        "ano": 2005,
+        "criador": "Adrian Holovaty & Simon Willison",
+        "categoria": "backend",
+        "link": "https://www.djangoproject.com/"
+    },
+    {
+        "nome":"Laravel",
+        "descricao":"Framework PHP elegante e simples, ideal para projetos web.",
+        "linguagem":"PHP",
+        "ano": 2011,
+        "criador": "Taylor Otwell",
+        "categoria": "backend",
+        "link": "https://laravel.com/"
+    },
+    {
+        "nome": "TensorFlow",
+        "descricao": "Framework poderoso para aprendizado de máquina.",
+        "linguagem": "Python",
+        "ano": 2015,
+        "criador": "Google",
+        "categoria": "Inteligência Artificial",
+        "link": "https://www.tensorflow.org/"
+    }
+]
