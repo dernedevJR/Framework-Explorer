@@ -157,7 +157,14 @@ main{
 .card:hover{
     transform:translateY(-6px)
 }
-
+.card a{
+    text-decoration: underline;
+    color: var(--cor-base);
+}
+.card a:hover{
+    text-decoration: none;
+    color: var(--cor-destaque);
+}
 .container-links{
     display: flex;
     gap: 50px;
@@ -208,8 +215,6 @@ footer a{
 .darkMode #trocar-tema svg:last-child{
     display: block;
 }
-
-/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
 
 @media (min-width: 768px) {
     /* Estilos para telas maiores que 768px (tablets e desktops) */
