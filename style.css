@@ -9,6 +9,9 @@
     --fonteTitulo: 'Orbitron', sans-serif;
     --fonteTexto: 'Zalando Sans Expanded', sans-serif;
     --base-secundaria:rgba(255, 255, 255, 0.764);
+    --card: var(--cor-base); /* Cor de fundo do card */
+    --radius: 12px; /* Raio da borda */
+    --shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra */
 }
 .darkMode{
      --cor-base: #070b1d;
@@ -20,20 +23,23 @@
     --fonteTitulo: 'Orbitron', sans-serif;
     --fonteTexto: 'Zalando Sans Expanded', sans-serif;
     --base-secundaria:rgba(255,255,255,0.02);
+    --shadow: 0 2px 8px rgba(0,0,0,0.2); /* Sombra um pouco mais visível no escuro */
 }
 *{
     box-sizing: border-box;
 }
-
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
 body{
    margin: 0px;
-   padding: 20px;
+   padding: 10px; 
    background-color: var(--cor-base);
    color: var(--texto);
-   min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
-   display: flex; /* Ativa o Flexbox */
-   flex-direction: column; /* Organiza os itens em coluna (header, main, footer) */
-   overflow: hidden; /* Mantém a remoção da rolagem */
+   min-height: 100vh; 
+   display: flex; 
+   flex-direction: column; 
    font-family: var(--fonteTexto);
    background-color: var(--base-variante);
 }
@@ -52,7 +58,14 @@ body{
     font-family: var(--fonteTitulo);
     margin: 0;
     font-size: 20px;
+    text-align: center; /* Centraliza o título */
 }
+
+.form-busca {
+    display: contents; /* Faz o form se comportar como se não estivesse ali para o layout flex */
+}
+
+
 #filtro-categoria{
    padding: 8px;
    border-radius: 10px;
@@ -63,6 +76,7 @@ body{
 }
 
 #busca{
+   width: 100%; /* Faz o input ocupar o espaço disponível */
    padding: 8px;
    border-radius: 10px;
    border: 1px solid rgba(255,255,255,0.04);
@@ -84,12 +98,64 @@ body{
     border: none;
     cursor: pointer;
 }
+
 i{
     color: var(--base-variante);
 }
+
 main{
-    flex: 1; /* Faz o main ocupar todo o espaço vertical disponível */
-    overflow-y: auto; /* Adiciona rolagem apenas no main, se necessário */
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+}
+main{
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+#card-wrapper{
+    flex: 1;
+    overflow: hidden;
+}
+
+#card-container{
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card {
+    background: #1a253a;                       
+    border-radius: 14px;
+    padding: 14px;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;   
+    margin-bottom: 30px;
+    width: 100%;
+    min-height: auto; 
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.card:hover{
+    transform:translateY(-6px)
 }
 
 .container-links{
@@ -112,8 +178,8 @@ footer a{
 
  /*Alterando Tema*/
 #trocar-tema{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-variante);
@@ -141,4 +207,31 @@ footer a{
 
 .darkMode #trocar-tema svg:last-child{
     display: block;
+}
+
+/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+
+@media (min-width: 768px) {
+    /* Estilos para telas maiores que 768px (tablets e desktops) */
+    body {
+        padding: 20px; /* Volta o padding original */
+    }
+
+    .brand h1 {
+        text-align: left; /* Alinha o título à esquerda em telas maiores */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Estilos para telas menores que 767px (celulares) */
+    .topBar {
+        flex-direction: column; /* Empilha os itens do cabeçalho verticalmente */
+        align-items: stretch; /* Faz os itens esticarem para preencher a largura */
+        gap: 12px;
+    }
+
+    .brand .tag {
+        text-align: center; /* Centraliza o subtítulo */
+        margin-bottom: 10px;
+    }
 }

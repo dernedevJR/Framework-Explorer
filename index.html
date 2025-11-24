@@ -21,20 +21,24 @@
             </button>
             <p class="tag">Descubra frameworks, suas tecnologias e onde aprender</p>
         </div>
-        <select id="filtro-categoria">
-            <option value="">Todas as categorias</option>
-            <option value="frontend">Front-end</option>
-            <option value="backend">Back-end</option>
-            <option value="ia">Inteligência Artificial</option>
-            <option value="Mobile">Mobile</option>
-        </select>
-         <input type="text" name="" id="busca" placeholder="Buscar framework...">
-         <button class="buscar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <form id="form-busca" class="form-busca">
+            <select id="filtro-categoria">
+                <option value="">Todas as categorias</option>
+                <option value="frontend">Front-end</option>
+                <option value="backend">Back-end</option>
+            <option value="Inteligencia Artificial">Inteligência Artificial</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+            <input type="text" name="" id="busca" placeholder="Buscar framework...">
+            <button type="submit" class="buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
     </header>
     <main>
-        <section id="cards"></section>
+        <section id="card-wrapper">
+            <div id="card-container"></div>
+        </section>
     </main>
     <footer>
        <div class="container-links">
