@@ -159,7 +159,7 @@ main{
 }
 .card a{
     text-decoration: underline;
-    color: var(--cor-base);
+    color: white;
 }
 .card a:hover{
     text-decoration: none;
