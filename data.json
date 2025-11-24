@@ -52,5 +52,185 @@
         "criador": "Google",
         "categoria": "Inteligencia Artificial",
         "link": "https://www.tensorflow.org/"
+    },
+      {
+        "nome": "Express.js",
+        "descricao": "Framework minimalista para criação de servidores e APIs.",
+        "linguagem": "JavaScript",
+        "ano": 2010,
+        "criador": "TJ Holowaychuk",
+        "categoria": "Backend",
+        "link": "https://expressjs.com/"
+    },
+    {
+        "nome": "Next.js",
+        "descricao": "Framework React focado em SSR e otimização de performance.",
+        "linguagem": "JavaScript",
+        "ano": 2016,
+        "criador": "Vercel",
+        "categoria": "Frontend",
+        "link": "https://nextjs.org/"
+    },
+    {
+        "nome": "Nuxt.js",
+        "descricao": "Framework Vue para aplicações modernas com SSR.",
+        "linguagem": "JavaScript",
+        "ano": 2016,
+        "criador": "Evan You & Comunidade",
+        "categoria": "Frontend",
+        "link": "https://nuxt.com/"
+    },
+    {
+        "nome": "Svelte",
+        "descricao": "Framework que compila o código e entrega apps super rápidos.",
+        "linguagem": "JavaScript",
+        "ano": 2016,
+        "criador": "Rich Harris",
+        "categoria": "Frontend",
+        "link": "https://svelte.dev/"
+    },
+    {
+        "nome": "Flask",
+        "descricao": "Microframework flexível para desenvolvimento web em Python.",
+        "linguagem": "Python",
+        "ano": 2010,
+        "criador": "Armin Ronacher",
+        "categoria": "Backend",
+        "link": "https://flask.palletsprojects.com/"
+    },
+    {
+        "nome": "FastAPI",
+        "descricao": "Framework moderno e rápido para APIs em Python.",
+        "linguagem": "Python",
+        "ano": 2018,
+        "criador": "Sebastián Ramírez",
+        "categoria": "Backend",
+        "link": "https://fastapi.tiangolo.com/"
+    },
+    {
+        "nome": "Ruby on Rails",
+        "descricao": "Framework web completo que segue o padrão MVC.",
+        "linguagem": "Ruby",
+        "ano": 2004,
+        "criador": "David Heinemeier Hansson",
+        "categoria": "Backend",
+        "link": "https://rubyonrails.org/"
+    },
+    {
+        "nome": "Spring Boot",
+        "descricao": "Framework Java para criação de aplicações robustas e rápidas.",
+        "linguagem": "Java",
+        "ano": 2014,
+        "criador": "VMware",
+        "categoria": "Backend",
+        "link": "https://spring.io/projects/spring-boot"
+    },
+    {
+        "nome": "ASP.NET Core",
+        "descricao": "Framework moderno da Microsoft para aplicações web.",
+        "linguagem": "C#",
+        "ano": 2016,
+        "criador": "Microsoft",
+        "categoria": "Backend",
+        "link": "https://dotnet.microsoft.com/"
+    },
+    {
+        "nome": "Flutter",
+        "descricao": "Framework para interfaces nativas com uma única base de código.",
+        "linguagem": "Dart",
+        "ano": 2017,
+        "criador": "Google",
+        "categoria": "Mobile",
+        "link": "https://flutter.dev/"
+    },
+    {
+        "nome": "Ionic",
+        "descricao": "Framework para apps híbridos usando tecnologias web.",
+        "linguagem": "JavaScript",
+        "ano": 2013,
+        "criador": "Max Lynch",
+        "categoria": "Mobile",
+        "link": "https://ionicframework.com/"
+    },
+    {
+        "nome": "Cordova",
+        "descricao": "Framework para aplicativos móveis utilizando HTML, CSS e JS.",
+        "linguagem": "JavaScript",
+        "ano": 2009,
+        "criador": "Nitobi, depois adquirido pela Adobe",
+        "categoria": "Mobile",
+        "link": "https://cordova.apache.org/"
+    },
+    {
+        "nome": "Keras",
+        "descricao": "Biblioteca de deep learning simples e poderosa.",
+        "linguagem": "Python",
+        "ano": 2015,
+        "criador": "François Chollet",
+        "categoria": "Inteligencia Artificial",
+        "link": "https://keras.io/"
+    },
+    {
+        "nome": "PyTorch",
+        "descricao": "Framework flexível para deep learning.",
+        "linguagem": "Python",
+        "ano": 2016,
+        "criador": "Meta AI",
+        "categoria": "Inteligencia Artificial",
+        "link": "https://pytorch.org/"
+    },
+    {
+        "nome": "Bootstrap",
+        "descricao": "Framework CSS mais popular para criar layouts responsivos.",
+        "linguagem": "CSS",
+        "ano": 2011,
+        "criador": "Twitter",
+        "categoria": "Frontend",
+        "link": "https://getbootstrap.com/"
+    },
+    {
+        "nome": "Tailwind CSS",
+        "descricao": "Framework utilitário para estilização rápida e customizável.",
+        "linguagem": "CSS",
+        "ano": 2017,
+        "criador": "Adam Wathan",
+        "categoria": "Frontend",
+        "link": "https://tailwindcss.com/"
+    },
+    {
+        "nome": "Electron",
+        "descricao": "Framework para criar apps desktop com HTML, CSS e JS.",
+        "linguagem": "JavaScript",
+        "ano": 2013,
+        "criador": "GitHub",
+        "categoria": "Desktop",
+        "link": "https://www.electronjs.org/"
+    },
+    {
+        "nome": "Quasar",
+        "descricao": "Framework full-stack baseado em Vue para web, mobile e desktop.",
+        "linguagem": "JavaScript",
+        "ano": 2016,
+        "criador": "Razvan Stoenescu",
+        "categoria": "Frontend",
+        "link": "https://quasar.dev/"
+    },
+    {
+        "nome": "CakePHP",
+        "descricao": "Framework PHP inspirado no Ruby on Rails, com foco em produtividade.",
+        "linguagem": "PHP",
+        "ano": 2005,
+        "criador": "Lorenzo García e outros",
+        "categoria": "Backend",
+        "link": "https://cakephp.org/"
+    },
+    {
+        "nome": "Meteor.js",
+        "descricao": "Framework full-stack para aplicações web em tempo real.",
+        "linguagem": "JavaScript",
+        "ano": 2012,
+        "criador": "Meteor Development Group",
+        "categoria": "Fullstack",
+        "link": "https://www.meteor.com/"
     }
 ]
