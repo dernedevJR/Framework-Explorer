@@ -14,7 +14,7 @@
     --shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra */
 }
 .darkMode{
-     --cor-base: #070b1d;
+    --cor-base: #070b1d;
     --base-variante: #101425;
     --texto: #ffffff;
     --texto-secundario: #a4a5b8;
